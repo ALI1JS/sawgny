@@ -1,0 +1,20 @@
+<%- include('parties/head') %> 
+<%- include('parties/header') %> 
+
+
+
+ <form novalidate action="/login" method="post" class="form-control-lg login">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleFormControlInput1" name="password">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">login</button>
+      </div>
+ </form>
+
+<%- include('parties/foot') %> 

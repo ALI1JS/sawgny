@@ -1,0 +1,131 @@
+<%- include("parties/head.ejs")%>
+<%- include("parties/header.ejs")%>
+  
+<div class="shoppingcart">
+    <div class="container">
+        <div class="url">
+            <p>home /shop/ shopping cart</p>
+        </div>
+        <div class="content">
+            <div class="myproduct">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>products</th>
+                            <th>price</th>
+                            <th>Quantity</th>
+                            <th>total</th>
+                            <th>remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% productcart.map((ele)=>{ %>
+                        <tr>
+                            <td>
+                              <img src="/image/<%=ele.img%>" alt="product">
+                                <span><%=ele.title%></span>
+                            </td>
+                            <td>$<%=ele.price%></td>
+                            <td class="btn">
+                                <button>-</button>
+                                 <span>1</span>
+                                 <button>+</button>
+                            </td>
+                            <td>$150</td>
+                            <td><i class="fa-sharp fa-solid fa-xmark"></i></td>
+                        </tr>
+                        <% })%>
+                        <!-- <tr>
+                          <td>
+                            <img src="img/product-2.jpg" alt="product">
+                              <span>product1 name</span>
+                          </td>
+                          <td>$150</td>
+                          <td class="btn">
+                              <button>-</button>
+                              <span>1</span>
+                               <button>+</button>
+                          </td>
+                          <td>$150</td>
+                          <td><i class="fa fa-times"></i></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="img/product-3.jpg" alt="product">
+                            <span>product1 name</span>
+                        </td>
+                        <td>$150</td>
+                        <td class="btn">
+                            <button>-</button>
+                            <span>1</span>
+                             <button>+</button>
+                        </td>
+                        <td>$150</td>
+                        <td><i class="fa fa-times"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="img/product-4.jpg" alt="product">
+                          <span>product1 name</span>
+                      </td>
+                      <td>$150</td>
+                      <td class="btn">
+                          <button>-</button>
+                          <span>1</span>
+                           <button>+</button>
+                      </td>
+                      <td>$150</td>
+                      <td><i class="fa fa-times"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/product-5.jpg" alt="product">
+                        <span>product1 name</span>
+                    </td>
+                    <td>$150</td>
+                    <td class="btn">
+                        <button>-</button>
+                        <span>1</span>
+                         <button>+</button>
+                    </td>
+                    <td>$150</td>
+                    <td><i class="fa fa-times"></i></td>
+                </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="checkout">
+                 <div class="coupon">
+                    <form action="#">
+                        <input type="text" placeholder="coupon code">
+                        <input type="submit" value="apply coupon">
+                    </form>
+                 </div>
+                 <div class="cartsummary">
+                    <div class="heading">
+                        <h3>cart summary</h3>
+                    </div>
+                    <div class="cartcontent">
+                        <div class="subtotal">
+                            <span>subtotal</span>
+                            <span>$150</span>
+                        </div>
+                        <div class="subtotal">
+                            <span>Shipping</span>
+                            <span>$10</span>
+                        </div>
+                        <div class="subtotal">
+                            <span>total</span>
+                            <span>$160</span>
+                        </div>
+                         <a href="#">processed to checkout</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+<%- include("parties/foot.ejs")%>

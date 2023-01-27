@@ -1,0 +1,15 @@
+<%- include('parties/head') %> 
+<%- include('parties/header') %> 
+
+<div class="signup">
+    <form novalidate action="/signup" method="post">
+        <h2>Register</h2>
+        <input type="text" placeholder="username" name="username">
+        <input type="email" placeholder="your email" name="email">
+        <input type="password" placeholder="your password" name="password">
+        <input type="password" placeholder="confirm password" name="confirm-password">
+        <input type="submit" value="Create">
+    </form>
+    <p class="text-white bg-danger"><%= nousermsg[0] %>  </p>
+</div>
+<%- include('parties/foot') %> 

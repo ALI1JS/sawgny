@@ -1,0 +1,32 @@
+<%- include('parties/head') %> 
+<%- include('parties/header') %> 
+ 
+<div class="profile">
+  <div class="container">
+      
+      <div class="user">
+        <div class="image">
+          <img src="/image/avatar.png" alt="profile">
+        </div>
+         <div class="userinfo">
+          <div class="info">
+            <h3><%= userinfo.username %> </h3>
+            <p><%= userinfo.email %></p>
+       </div>
+       <form action="/profile" method="post" enctype="multipart/form-data" >
+        <!-- <label for="uplode">choose photo</label> -->
+          <input class="file" type="file" id="upload" >
+         <input type="submit" value="edit">
+       </form>
+          
+         </div>
+      </div>
+        <div class="acount">
+            <form action="/deleteacount" method="post">
+                 <input type="submit" value="delete a count">
+            </form>
+        </div>
+  </div>
+</div>
+
+<%- include('parties/foot') %> 

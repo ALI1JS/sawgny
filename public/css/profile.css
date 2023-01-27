@@ -1,0 +1,70 @@
+.profile{
+    width:95vw;
+    height:100vh;
+    background-color:white;
+}
+.profile .container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    gap:50px;
+}
+.profile .container .user{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.profile .container .user .image{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 50%;
+}
+.profile .container .user .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile .container .user .userinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.profile .container .user .userinfo .info h3{
+   text-transform: capitalize;
+}
+.profile .container .user .userinfo form label{
+   text-transform: capitalize;
+   font-weight:bold;
+}
+.profile .container .user .userinfo form input.file{
+
+}
+.profile .container .user .userinfo form label{
+    transform: translateX(100%);
+    border: 1px dashed black;
+    padding: 20px 10px;
+    display: none;
+}
+.profile .container .user .userinfo form input:last-child{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(106, 175, 236); 
+    padding: 5px 20px;
+    text-transform: capitalize;
+}
+.profile .container .acount{
+    width:16%;
+}
+.profile .container .acount form input{
+    text-transform: capitalize;
+    background-color: rgb(240, 169, 169);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 8px;
+}

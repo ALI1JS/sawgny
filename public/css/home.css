@@ -1,0 +1,13 @@
+.container{
+    padding: 50px 0px;
+}
+.row-cols-4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.row-cols-4 .col{
+    width:300px;
+    margin: 5px;
+}

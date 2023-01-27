@@ -1,0 +1,124 @@
+<%- include('parties/head') %> 
+<%- include('parties/header') %> 
+ <div class="details">
+    <div class="container">
+        <div class="url">
+            <h3>Home / Shop / ShopDetails </h3>
+        </div>
+        <% product.map((ele)=>{ %> 
+        <div class="productdetails">
+          <div class="image">
+            
+            <img src="/image/<%=ele.img%>" alt="product-1">
+          </div>
+          <div class="detail">
+            <h3><%=ele.title%></h3>
+            <div class="star">
+              <small class="fas fa-star"></small>
+              <small class="fas fa-star"></small>
+              <small class="fas fa-star"></small>
+              <small class="fas fa-star"></small>
+              <span>(200 reviews)</span>
+            </div>
+            <div class="price">
+              <h3><%= ele.price %> $</h3>
+            </div>
+            <p>
+                <span><%= ele.desc.desc1 %> </span>
+                <span><%= ele.desc.color %> </span>
+                <span><%= ele.desc.size %> </span>
+            </p>
+            <form action="#">
+              <div class="size">
+                <div class="heading">
+                  <h3>size :</h3>
+                </div>
+                <div class="input">
+                  <input type="radio" id="s" >
+                  <label for="s">s</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="m" >
+                  <label for="m">m</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="l" >
+                  <label for="l">l</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="xl" >
+                  <label for="xl">xl</label>
+                </div>
+              </div>
+              <div class="size">
+                <div class="heading">
+                  <h3>color :  </h3>
+                </div>
+                <div class="input">
+                  <input type="radio" id="black" >
+                  <label for="black">black</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="yellow" >
+                  <label for="yellow">yellow</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="white" >
+                  <label for="white">white</label>
+                </div>
+                <div class="input">
+                  <input type="radio" id="red" >
+                  <label for="red">red</label>
+                </div>
+              </div>
+              <div class="btns">
+               <div class="counter">
+                <span class="minus">-</span>
+                <span class="container">1</span>
+                <span class="plus">+</span>
+               </div>
+               <button>
+                <i class="fa fa-shopping-cart mr-1"></i> 
+                add to cart
+               </button>
+              </div>
+            </form>
+            <div class="social">
+              <h3>share on </h3>
+              <a class="text-dark px-2" href="">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-dark px-2" href="">
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a class="text-dark px-2" href="">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="text-dark px-2" href="">
+          <i class="fab fa-pinterest"></i>
+          </a>
+            </div>
+          </div>
+          <div class="moredetails">
+            <div class="heading">
+          <a  class="active" href="#" >description</a>
+              <a >information</a>
+              <a >reviews(0)</a>
+            </div>
+              <div class="content">
+                
+                <p class="desc">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Animi quam asperiores culpa?
+                     Quod, voluptate ab deleniti dolorum impedit
+                     consectetur sint eum quam voluptatem quo atque 
+                     rerum amet nihil odit autem.
+                
+              </div>
+          </div>
+        </div>
+
+        <% }) %> 
+    </div>
+  </div>
+
+<%- include('parties/foot') %> 
